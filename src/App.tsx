@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import './App.css';
+import { TestInput } from './TestInput';
 
 function App(): JSX.Element {
   const [count, setCount] = useState(0);
@@ -19,6 +20,8 @@ function App(): JSX.Element {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <TestInput valuekey="firstValue" />
+        <TestInput valuekey="secondValue" />
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
